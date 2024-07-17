@@ -4,6 +4,11 @@ public class Celda {
     int row; // Fila de la celda
     int col; // Columna de la celda
 
+    @Override
+    public String toString() {
+        return "Celda [row=" + row + ", col=" + col + "]";
+    }
+
     // Constructor que inicializa una celda con la fila y columna especificadas
     public Celda(int row, int col) {
         this.row = row;
@@ -36,4 +41,5 @@ public class Celda {
             return false; // Comparamos las columnas
         return true; // Si todas las comparaciones son iguales, los objetos son iguales
     }
+
 }
